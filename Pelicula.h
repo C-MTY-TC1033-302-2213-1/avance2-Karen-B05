@@ -5,7 +5,6 @@
 //Fecha: 20-Mayo-2024
 //¿Qué aprendí en el desarrollo de esta clase?: Aprendi sobre herencia
 
-
 #ifndef Pelicula_h
 #define Pelicula_h
 

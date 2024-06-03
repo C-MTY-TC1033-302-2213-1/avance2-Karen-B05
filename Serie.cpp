@@ -4,6 +4,7 @@
 //Carrera: ITC
 //Fecha: 20-Mayo-2024
 
+
 #include "Serie.h"
 #include "Episodio.h"
 
@@ -72,8 +73,8 @@ double Serie::calculaPromedio(){
 string Serie::str(){
     string informacion = iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion) + ' ' + to_string(cantidad) + '\n';
 
-    for (int i = 0; i < cantidad; ++i) {
-        informacion += getEpisodio(i).str() + '\n';
+    for (int index = 0; index < cantidad; index++) {
+        informacion += getEpisodio(index).str() + '\n';
     }
 
     return informacion;
@@ -87,7 +88,8 @@ void Serie::agregaEpisodio(Episodio episodio){
 }
 
 void Serie::calculaDuracion(){
-   for(int index = 0; index < cantidad; index++){
+    duracion = 0;
+    for(int index = 0; index < cantidad; index++){
         duracion += episodios[index].getTemporada();
-   }
+    }
 }

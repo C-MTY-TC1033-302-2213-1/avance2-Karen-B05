@@ -4,7 +4,6 @@
 //Carrera: ITC
 //Fecha: 26-Mayo-2024
 
-
 #include "Polimorfismo.h"
 
 using namespace std;

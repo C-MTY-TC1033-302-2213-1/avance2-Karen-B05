@@ -4,7 +4,6 @@
 //Carrera: ITC
 //Fecha: 20-Mayo-2024
 
-
 #include "Serie.h"
 #include "Episodio.h"
 
@@ -71,7 +70,13 @@ double Serie::calculaPromedio(){
 
 //Overriding del método str() de la clase Base
 string Serie::str(){
-    return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion) + ' ' + to_string(cantidad) + '\n' + getEpisodio(0).str() + '\n' + getEpisodio(1).str() + '\n';
+    string informacion = iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion) + ' ' + to_string(cantidad) + '\n';
+
+    for (int i = 0; i < cantidad; ++i) {
+        informacion += getEpisodio(i).str() + '\n';
+    }
+
+    return informacion;
 }
 
 //Agrega un episodio solo si existe espacio

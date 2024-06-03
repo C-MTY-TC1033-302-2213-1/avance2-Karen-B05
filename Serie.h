@@ -5,6 +5,7 @@
 //Fecha: 20-Mayo-2024
 //¿Qué aprendí en el desarrollo de esta clase?: Aprendi sobre herencia y concatenacion
 
+
 #ifndef Serie_h
 #define Serie_h
 

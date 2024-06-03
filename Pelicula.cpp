@@ -4,7 +4,6 @@
 //Carrera: ITC
 //Fecha: 20-Mayo-2024
 
-
 #include "Pelicula.h"
 
 //Metodos constructores: vacio y con parámetros

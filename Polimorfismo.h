@@ -9,6 +9,7 @@ utilizandolos puedes tener a tu clase base apuntando a objetos de clases derivad
 del programa al dar acceso directo.
 */
 
+
 #ifndef Polimorfismo_h
 #define Polimorfismo_h
 

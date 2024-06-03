@@ -4,14 +4,13 @@
 //Carrera: ITC
 //Fecha: 20-Mayo-2024
 
-
 #include "Episodio.h"
 
 //Constructores
 Episodio::Episodio(){
-    titulo = "Los premios iCarly";
+    titulo = "TC1030";
     temporada = 2;
-    calificacion = 83;
+    calificacion = 100;
 }
 
 Episodio::Episodio(string _titulo,int _temporada,int _calificacion){
